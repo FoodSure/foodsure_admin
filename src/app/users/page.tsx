@@ -1,7 +1,7 @@
 import Breadcrumb from "@/components/Breadcrumbs/Breadcrumb";
-import TableOne from "@/components/Users/TableOne";
-import TableThree from "@/components/Users/TableThree";
-import TableTwo from "@/components/Users/TableTwo";
+import Companies from "@/components/Users/Companies";
+import Individuals from "@/components/Users/Individuals";
+import Merchants from "@/components/Users/Merchants";
 
 import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLaout";
@@ -17,9 +17,9 @@ const UsersPage = () => {
       <Breadcrumb pageName="Users" />
 
       <div className="flex flex-col gap-10">
-        <TableOne />
-        <TableTwo />
-        <TableThree />
+        <Companies />
+        <Individuals />
+        <Merchants />
       </div>
     </DefaultLayout>
   );
